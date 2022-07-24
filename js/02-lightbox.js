@@ -10,6 +10,7 @@ const images= galleryItems.map((e) => {
     src="${e.preview}" 
     data-source="${e.original}" 
     alt='${e.description}'
+    title = '${e.description}'
     />
     </a>
     </div>`;
@@ -19,4 +20,4 @@ const images= galleryItems.map((e) => {
 
 gallery.insertAdjacentHTML("afterbegin", images )
 
- new SimpleLightbox('.gallery a',{captionsData : '${alt}', captionDelay : 250})
+ new SimpleLightbox('.gallery a',{ captionDelay : 250})
